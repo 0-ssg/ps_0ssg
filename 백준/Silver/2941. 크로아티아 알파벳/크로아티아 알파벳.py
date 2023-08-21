@@ -1,0 +1,11 @@
+import sys
+input = sys.stdin.readline
+
+croatia = ['c=','c-','dz=','d-','lj','nj','s=','z=']
+
+word = input().rstrip()
+
+for i in croatia:
+    word = word.replace(i, 'A')
+        
+print(len(word))
